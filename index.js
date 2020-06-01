@@ -10,3 +10,6 @@ const firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+//   create a refernce to register
+const registerRef = firebase.database.ref('register');
