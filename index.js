@@ -27,10 +27,22 @@ function registerUser(e) {
     const phone = getInputValues('phone');
     const message = getInputValues('message');
   
-
 }
 
 // get the input values
 const getInputValues = (id) => {
     return document.getElementById(id).value;
+}
+
+// save the data to firebase
+
+const saveInfoToFirebase = (name,company,email,phone,message) => {
+    const pushToFirebase = registerRef.push();
+    pushToFirebase.set({
+        name,
+        company,
+        email,
+        phone,
+        message
+    })
 }
