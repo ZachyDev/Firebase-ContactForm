@@ -26,6 +26,9 @@ function registerUser(e) {
     const email = getInputValues('email');
     const phone = getInputValues('phone');
     const message = getInputValues('message');
+
+    // save to firebase
+    saveInfoToFirebase(name,company,email,phone,message);
   
 }
 
