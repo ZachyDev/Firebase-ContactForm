@@ -12,4 +12,18 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 //   create a refernce to register
-const registerRef = firebase.database.ref('register');
+const registerRef = firebase.database().ref('register');
+
+// add event listener to submit
+document.getElementById('contactForm').addEventListener('submit',registerUser);
+
+// registerUser function
+function registerUser(e) {
+    e.preventDefault();
+    // get input values
+}
+
+// get the input values
+const getInputValues = (id) => {
+    return document.getElementById(id).value;
+}
