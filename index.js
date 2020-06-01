@@ -29,6 +29,14 @@ function registerUser(e) {
 
     // save to firebase
     saveInfoToFirebase(name,company,email,phone,message);
+
+    // show alert upon submission
+    document.querySelector('.alert').style.display = 'block';
+    
+    // hide alert after 4 seconds
+    setTimeout(() =>{
+        document.querySelector('.alert').style.display = 'none';
+    },4000)
   
 }
 

@@ -92,9 +92,10 @@ ul{
 .alert{
   text-align: center;
   padding:10px;
-  background:#79c879;
+  background:#1b8f1b;
   color:#fff;
   margin-bottom:10px;
+  font-family: sans-serif;
   display:none;
 }
 
