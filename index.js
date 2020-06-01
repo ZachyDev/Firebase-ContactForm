@@ -21,6 +21,13 @@ document.getElementById('contactForm').addEventListener('submit',registerUser);
 function registerUser(e) {
     e.preventDefault();
     // get input values
+    const name = getInputValues('name');
+    const company = getInputValues('company');
+    const email = getInputValues('email');
+    const phone = getInputValues('phone');
+    const message = getInputValues('message');
+  
+
 }
 
 // get the input values
